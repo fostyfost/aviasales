@@ -1,0 +1,61 @@
+:root {
+  --main-background: #f3f7fa;
+  --primary-color: #4a4a4a;
+  --secondary-color: #2196f3;
+  --gray-color: #a0b0b9;
+  --white-color: #fff;
+  --primary-background: #f1fcff;
+  --primary-border-radius: 5px;
+  --secondary-border-radius: 2px;
+  --primary-border-color: #dfe5ec;
+  --secondary-border-color: #9abbce;
+  --default-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --default-outline: dotted 1px var(--primary-color);
+  --default-outline-offset: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--main-background);
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+*:focus {
+  outline: var(--default-outline);
+  outline-offset: var(--default-outline-offset);
+}
+
+:global .visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+:global .header,
+:global .footer {
+  height: 160px;
+
+  position: relative;
+
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+:global .logo {
+  position: absolute;
+  top: calc(50% + 7px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:global .main {
+  display: flex;
+  justify-content: center;
+}
